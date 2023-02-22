@@ -6,10 +6,10 @@ import (
 	//"strings"
 )
 
-var ircCfg Config
+var ircCfg IrcConfig
 var c Client
 
-type Config struct {
+type IrcConfig struct {
 	name		string
 	token		string
 	channels	[]string
@@ -74,7 +74,7 @@ func Init() {
 }
 
 func main() {
-	var cfg Config
+	var cfg IrcConfig
 	cfg.name = "pantibiabot"
 	cfg.token = "TOKEN"
 	cfg.channels = []string{"panzp"}
